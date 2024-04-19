@@ -1,7 +1,7 @@
 # Final-Project-Statistical-Modelling-with-Python
 
 ## Project/Goals
-This project aims to investigate the correlation between the availability of free bikes at bike stations in Vancouver city and the characteristics of nearby bars located within a 1000m radius of each bike station. 
+This project aims to investigate the **correlation between the availability of free bikes** at bike stations in Vancouver city and the **characteristics of nearby bars located within a 1000m** radius of each bike station. 
 
 The objective is to ascertain whether the presence of bars impacts the availability of bikes and to identify the key features that most accurately describe this relationship and to what degree the impact can be found.
 
@@ -42,19 +42,10 @@ Both the API results even with a radius provided with value of 1000m yielded row
 </ul>
 
 ### Regression Model Results
-<ul>
-<li>
-The model explains the dependency of bikes count by 14.70% and the prominent features found were Yelp Average rating, Yelp review count and outdoor seating feature from foursquare.
-<li>
-Yelp Average rating, Yelp review count and Foursquare outdoor seating features are significant features. 
-</li>
-<li>
-With every 1 unit increase in yelp rating and outdoor seating feature, number of bikes will increase by 5.4052 and 3.8005 respectively.
-</li>
-<li>
-With every 1 unit increase in yelp review count, number of bikes will decrease by -0.0080.
-</li>
-</ul>
+- The model explains the dependency of bikes count by **14.70%** and the prominent features found were ***Yelp Average rating, Yelp review count and outdoor seating feature from foursquare***.
+- Yelp Average rating, Yelp review count and Foursquare outdoor seating features are significant features. 
+- With **every 1 unit increase** in **yelp rating and outdoor seating feature, number of bikes will increase by 5.4052 and 3.8005 respectively**.
+- With **every 1 unit increase in yelp review count**, number of bikes will **decrease by -0.0080**.
 
 ## Challenges 
 <ul>
@@ -74,5 +65,6 @@ Performing regression with Yelp and CityBikes API merged data resulted in a poor
 - Exploring other impacting features such as data during certain times of the day.
 - How dense is the POI and bike station in regards to population, buildings, traffic etc.
 - One scope of the project could be focusing on one bike station and gather n number of unique POIs to see how those affect the station.
+- Automating the regression model until all the independent variables p-values are lesser than threshold or Adjusted R Square stops increasing.
 
 
